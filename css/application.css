@@ -1,0 +1,25 @@
+#main{
+    background-image: url("/img/bg.jpg");
+    height: 100%;
+}
+#main .panel{
+    background: none;
+    color: white;;
+    margin-top: 20%;
+    padding-top: 30px;
+}
+.fullWidth{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    max-width: 100% !important;
+}
+h1{
+    color: white !important;
+    font-weight: 100;
+    font-family: serif;
+}
+p{
+    color: white !important;
+    font-weight: 100;
+    font-family: serif;
+}
