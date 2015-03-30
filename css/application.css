@@ -1,21 +1,18 @@
 #main{
-    background-image: url("/img/bg.jpg");
+    background-image: url("/img/bg.png");
     height: 100%;
 }
 #main .panel{
     background: none;
     color: white;
-    margin-top: 20%;
     padding-top: 30px;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+    min-height: 380px;
 }
-#main .panel:hover{
-    background-color: rgba(255,255,255,0.4);
-    color:transparent;
-}
+
 .fullWidth{
     margin-left: 0px !important;
     margin-right: 0px !important;
@@ -24,10 +21,22 @@
 h1{
     color: white !important;
     font-weight: 100;
-    font-family: serif;
 }
 p{
     color: white !important;
     font-weight: 100;
-    font-family: serif;
+}
+li{
+    color: white !important;
+    font-weight: 100;
+}
+#frontpage{
+    margin-top: 15%;
+    height: 200px !important;
+}
+.logo{
+    background-color: white !important;
+}
+a{
+    color:yellow;
 }
