@@ -61,31 +61,57 @@
             </div> <!-- .cd-full-width -->
           </li>
 
-          <li>
-            <div class="cd-half-width">
-              <h2>Slide title here</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
-              <a href="#0" class="cd-btn">Start</a>
-              <a href="#0" class="cd-btn secondary">Learn More</a>
-            </div> <!-- .cd-half-width -->
+          <li class="">
+            <div class="cd-full-width">
+              <div class="row">
+                <div class=" heropanel">
+                  <h2>Experience you can count on</h2>
+                  <p>With more than 25 years of combined principal experience, Erakovic Engineering Ltd. provides structural
 
-            <div class="cd-half-width cd-img-container">
-              <img src="assets/tech-1.jpg" alt="tech 1">
-            </div> <!-- .cd-half-width.cd-img-container -->
+                    engineering services to architects, developers, building owners, and contractors. Past experience
+
+                    involves a broad spectrum of sectors including; institutional, performing arts, hospitality, residential,
+
+                    healthcare, and commercial.</p>
+                </div>
+              </div>
+
+            </div> <!-- .cd-full-width -->
           </li>
+
+
+          <li class="">
+            <div class="cd-full-width">
+              <div class="row">
+                <div class=" heropanel">
+                  <h2>Quality</h2>
+                  <p>Recognized for our collaborative design methods and refined solutions, we
+
+                    deliver the world’s most challenging projects, whether the challenge be technical ambition, scale, or
+
+                    delivery method. We meet these challenges without sacrificing quality or respect for our people and our
+
+                    clients.</p>
+                </div>
+              </div>
+
+            </div> <!-- .cd-full-width -->
+          </li>
+
 
         </ul> <!-- .cd-hero-slider -->
 
-        <!--<div class="cd-slider-nav">-->
-          <!--<nav>-->
-            <!--<span class="cd-marker item-1"></span>-->
+        <div class="cd-slider-nav">
+          <nav>
+            <span class="cd-marker item-1"></span>
 
-            <!--<ul>-->
-              <!--<li class="selected"><a href="#0">Intro</a></li>-->
-              <!--<li><a href="#0">Tech 1</a></li>-->
-            <!--</ul>-->
-          <!--</nav>-->
-        <!--</div> &lt;!&ndash; .cd-slider-nav &ndash;&gt;-->
+            <ul>
+              <li class="selected"><a href="#0"><h1>1</h1></a></li>
+              <li><a href="#0">2</a></li>
+              <li><a href="#0">3</a></li>
+            </ul>
+          </nav>
+        </div> <!-- .cd-slider-nav -->
       </section>
 
 
@@ -100,7 +126,10 @@
 <script src="js/main.js"></script>
 <script>
   $(document).foundation();
-
+  $(document).ready(function(){
+    var heroheight = $(window).height() - 55;
+    $(".cd-hero-slider").css('height',heroheight)
+  })
 </script>
 </body>
 </html>
