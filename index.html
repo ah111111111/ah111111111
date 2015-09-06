@@ -1,35 +1,101 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Erakovic Engineering</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/application.css" />
-    <script src="js/vendor/modernizr.js"></script>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal website of Allan Hamzic.">
+  <title>Erakovic Engineering Ltd.</title>
+  <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="stylesheet" href="css/application.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon"
+        type="favicon.png"
+        href="favicon.png">
+  <script src="js/vendor/modernizr.js"></script>
+</head>
+<body>
 
-<div class="row fullWidth" id="main">
-    <div class="medium-6 medium-offset-3 small-centered" id="frontpage">
-    <div class = "show-for-large-up large-4 columns panel logo"><img src="/img/logo.png"> </div>
-    <div class = "small-12 show-for-medium-down columns panel logo"><img src="/img/small-logo.png"> </div>
+<div class="contain-to-grid sticky">
+  <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="index.html">ERAKOVIC ENGINEERING LTD.</a></h1>
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
 
-    <div class="small-12 large-8 columns  panel ">
-        <h1 class="text-center">Welcome to Erakovic Engineering</h1>
-        <hr>
-        <p>Our website is currently under construction, please call contact us for further information. You can reach us by:</p>
-        <ul>
-            <li>Phone: +1.705.888.7576</li>
-            <li>Email: <a href="mailto:neb@erakovic-eng.com">neb@erakovic-eng.com</a></li>
-        </ul>
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class=""><a href="resume.html">Projects</a></li>
+        <li class=""><a href="contact.html">Contact</a></li>
+      </ul>
+    </section>
+  </nav>
+</div>
+
+<div class="animated-bg">
+  <div class="content">
+    <div id="large">
+<!--===================-->
+
+
+      <section class="cd-hero">
+        <ul class="cd-hero-slider">
+          <li class="selected">
+            <div class="cd-full-width">
+              <h2>Welcome</h2>
+              <p>Valued for our engineering ingenuity, superior customer service, and ability to combine
+
+                local knowledge with international best practice, Erakovic Engineering Ltd. provides
+
+                innovative and functional design solutions to clients worldwide.</p>
+
+            </div> <!-- .cd-full-width -->
+          </li>
+
+          <li>
+            <div class="cd-half-width">
+              <h2>Slide title here</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
+              <a href="#0" class="cd-btn">Start</a>
+              <a href="#0" class="cd-btn secondary">Learn More</a>
+            </div> <!-- .cd-half-width -->
+
+            <div class="cd-half-width cd-img-container">
+              <img src="assets/tech-1.jpg" alt="tech 1">
+            </div> <!-- .cd-half-width.cd-img-container -->
+          </li>
+
+        </ul> <!-- .cd-hero-slider -->
+
+        <div class="cd-slider-nav">
+          <nav>
+            <span class="cd-marker item-1"></span>
+
+            <ul>
+              <li class="selected"><a href="#0">Intro</a></li>
+              <li><a href="#0">Tech 1</a></li>
+            </ul>
+          </nav>
+        </div> <!-- .cd-slider-nav -->
+      </section>
+
+
+
+<!--=====================-->
     </div>
+  </div>
 </div>
-</div>
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-  </body>
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+  $(document).foundation();
+</script>
+</body>
 </html>
