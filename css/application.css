@@ -23,6 +23,10 @@ h1{
     /*color: white !important;*/
     font-weight: 100;
 }
+h5{
+    /*color: white !important;*/
+    font-weight: 300;
+}
 p{
     /*color: white !important;*/
     font-weight: 100;
@@ -119,14 +123,9 @@ and (max-width: 480px) {
 
 /*home*/
 .heropanel{
-    position: absolute;
     margin: 0;
     padding: 30px;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate3d(-50%,-50%,0);
-    transform: translate3d(-50%,-50%,0);
-    /*background-color:rgba(0,0,0,0.05) !important;*/
+    background-color:rgba(0,0,0,0.25) !important;
     border:1px solid #d8d8d8 !important;
 }
 .contactpanel{
@@ -140,11 +139,11 @@ and (max-width: 480px) {
 }
 .heropanel p{
     font-size: 1.2em;
-    color:#333333 !important;
+    /*color:#333333 !important;*/
 }
 .heropanel h1{
     font-size:4em;
-    color:#373737 !important;
+    /*color:#373737 !important;*/
 }
 .pic1{
     background-size: cover;
@@ -212,5 +211,11 @@ and (max-width: 480px) {
 /*contact*/
 .contacttext{
     font-size:1.5em;
+}
+#frontpage li{
+    padding:10px;
+}
+#frontpage p{
+    padding:10px;
 }
 
