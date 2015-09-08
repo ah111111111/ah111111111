@@ -16,11 +16,15 @@
 </head>
 <body>
 
-<div class="contain-to-grid sticky">
+<div class="contain-to-grid sticky topbarstyle">
   <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
     <ul class="title-area">
       <li class="name">
-        <h1><a href="index.html">ERAKOVIC ENGINEERING LTD.</a></h1>
+        <a href="index.html">
+          <div class="leftblocker"></div>
+          <div class="sitename "></div>
+          <div class="rightblocker"></div>
+        </a>
       </li>
       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
       <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -83,18 +87,30 @@
           </nav>
         </div> <!-- .cd-slider-nav -->
       </section>
+        <div class="row">
+        <div class="panel heropanel columns large-6 medium-11 small-12" id="headselector">
+
+          <div class="columns small-12"id="heightselector">
+            <h1>Welcome</h1>
+            <p>Valued for our engineering ingenuity, superior customer service, and ability to combine
+
+              local knowledge with international best practice, Erakovic Engineering Ltd. provides
+
+              innovative and functional design solutions to clients worldwide.</p>
+            <div class="row homebuttons">
+              <div class="columns text-center small-6">
+                <a href="" id="aboutbutton" class="button expand">About</a>
+              </div>
+              <div class="columns text-center small-6">
+                <a href="contact.html" class="button expand">Contact</a>
+              </div>
 
 
-      <div class="panel heropanel columns large-7 medium-11 small-12" id="headselector">
-
-        <div class="columns small-12"id="heightselector">
-          <p>Valued for our engineering ingenuity, superior customer service, and ability to combine
-
-            local knowledge with international best practice, Erakovic Engineering Ltd. provides
-
-            innovative and functional design solutions to clients worldwide.</p>
+            </div>
+          </div>
         </div>
       </div>
+
 
 
 <!--=====================-->
@@ -103,7 +119,9 @@
 
 </div>
 <div class="row page2">
+  <div class="small-12 columns banner"></div>
   <div class="small-12 columns">
+    <h1>About Us</h1>
     <p>With more than 25 years of combined principal experience, Erakovic Engineering Ltd. provides structural
 
       engineering services to architects, developers, building owners, and contractors. Past experience
@@ -123,11 +141,22 @@
 <script src="js/vendor/jquery.js"></script>
 <script src="js/foundation.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/smoothscroll.js"></script>
 <script>
   $(document).foundation();
   $(document).ready(function(){
-    var heroheight = $(window).height() - 255;
+    var heroheight = $(window).height();
     $(".cd-hero-slider").css('height',heroheight)
+
+    $('#aboutbutton').on('click', function() {
+      $.smoothScroll({
+        scrollElement: null,
+        scrollTarget: '.page2',
+        offset: -100
+      });
+      return false;
+    });
+
   })
 
 
