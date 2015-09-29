@@ -231,11 +231,11 @@ and (max-width: 480px) {
 .subheading-text{
     position:relative;
     left:-50%;
-    margin-top:-65px;
+    margin-top:-25px;
     font-weight: 300;
     color:black !important;
     /*text-shadow: 0px 0px 5px rgba(20, 20, 20, 1);*/
-    font-size: 3em;
+    font-size: 2em;
     min-width: 350px;
 }
 .background-image {
@@ -309,6 +309,7 @@ and (max-width: 480px) {
     width: 200px;
     top:-50px;
     left:50px;
+    border: 5px solid #f2f2f2;
 }
 .teammembertop{
     background-color:#257baa;
@@ -325,6 +326,9 @@ and (max-width: 480px) {
 .teammember .neb{
     background-image: url("neb1.JPG");
 }
+.teammember .cri{
+    background-image: url("filler.png");
+}
 .teammember .daj{
     background-image: url("filler.png");
 }
@@ -340,4 +344,14 @@ and (max-width: 480px) {
     height: 150px;
     margin-bottom: 25px;
     background-position-y: -373px;
+}
+.jobtitle{
+    font-size:0.5REM;
+    font-weight: 800;
+    margin-bottom:0;
+    margin-right:10px;
+}
+.moreprojectsbutton{
+    background-color:#000;
+    height: 100px;
 }
