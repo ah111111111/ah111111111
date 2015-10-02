@@ -90,25 +90,64 @@
         <div class="row">
         <div class="panel heropanel columns large-6 medium-11 small-12" id="headselector">
 
-          <div class="columns small-12"id="heightselector">
-            <h1>Welcome</h1>
-            <p>Valued for our engineering ingenuity, superior customer service, and ability to combine
 
-              local knowledge with international best practice, Erakovic Engineering Ltd. provides
+          <!--<div class="row">-->
+              <!--<div class="columns small-12 welcomeherocontent"id="heightselector">-->
+                <!--<h1>Welcome</h1>-->
+                <!--<p>Valued for our engineering ingenuity, superior customer service, and ability to combine-->
 
-              innovative and functional design solutions to clients worldwide.</p>
-            <div class="row homebuttons">
-              <div class="columns text-center small-6">
-                <a href="" id="aboutbutton" class="button expand">About</a>
-              </div>
-              <div class="columns text-center small-6">
-                <a href="contact.html" class="button expand">Contact</a>
-              </div>
+                  <!--local knowledge with international best practice, Erakovic Engineering Ltd. provides-->
+
+                  <!--innovative and functional design solutions to clients worldwide.</p>-->
+                <!--<div class="row homebuttons">-->
+                  <!--<div class="columns text-center small-6">-->
+                    <!--<a href="" id="aboutbutton" class="button expand">About</a>-->
+                  <!--</div>-->
+                  <!--<div class="columns text-center small-6">-->
+                    <!--<a href="contact.html" class="button expand">Contact</a>-->
+                  <!--</div>-->
 
 
-            </div>
-          </div>
+                <!--</div>-->
+              <!--</div>-->
+          <!--</div>-->
+
         </div>
+
+
+
+          <div class="panel heropaneltextonly columns large-6 medium-11 small-12" id="headselector">
+
+
+            <div class="row">
+              <div class="columns small-12 "id="heightselector">
+                <h1>Welcome</h1>
+                <hr>
+                <p>Valued for our <span class="herohighlight">engineering ingenuity</span>, superior customer service, and ability to combine
+
+                  local knowledge with international best practice, <span class="herohighlight">Erakovic Engineering Ltd.</span> provides
+
+                  innovative and functional design solutions to clients worldwide.</p>
+                <hr>
+                <div class="row homebuttons">
+                  <div class="columns text-center small-6">
+                    <a href="" id="aboutbutton" class="button expand">About</a>
+                  </div>
+                  <div class="columns text-center small-6">
+                    <a href="contact.html" class="button expand">Contact</a>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+
       </div>
 
 
@@ -147,7 +186,7 @@
   $(document).ready(function(){
     var heroheight = $(window).height();
     $(".cd-hero-slider").css('height',heroheight)
-
+    $(".heropanel").css('height',heroheight-255)
     $('#aboutbutton').on('click', function() {
       $.smoothScroll({
         scrollElement: null,

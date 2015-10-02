@@ -181,11 +181,27 @@ and (max-width: 480px) {
     position:absolute;
     margin: 0;
     padding: 30px;
-    background-color:rgba(0,0,0,0.55) !important;
-    border:1px solid #d8d8d8 !important;
+    background-color:rgba(0,0,0,0.75) !important;
+    /*border:1px solid #d8d8d8 !important;*/
     font-size:62.5%;
     top:255px;
+    left:0;
+    width:100%;
+    /*width:1000px;*/
+    /*-webkit-transform: translate3d(-50%,-50%,0);*/
+    /*transform: translate3d(-50%,-50%,0);*/
+}
+.heropaneltextonly{
+    position:absolute;
+    margin: 0;
+    padding: 30px;
+    /*background-color:rgba(0,0,0,0.55) !important;*/
+    /*border:1px solid #d8d8d8 !important;*/
+    font-size:62.5%;
+    top:300px;
+    /*left:0;*/
     width:1000px;
+    /*width:1000px;*/
     /*-webkit-transform: translate3d(-50%,-50%,0);*/
     /*transform: translate3d(-50%,-50%,0);*/
 }
@@ -198,14 +214,29 @@ and (max-width: 480px) {
     -webkit-transform: translate3d(-50%,-50%,0);
     transform: translate3d(-50%,-50%,0);
 }
-.heropanel p{
+.heropaneltextonly p{
     font-size: 1.2em;
     color:white !important;
     line-height: 1.5;
 }
-.heropanel h1{
+.heropaneltextonly h1{
     font-size:4em;
     /*color:#373737 !important;*/
+}
+.heropaneltextonly .button{
+    background:none;
+    /*color:#373737 !important;*/
+    border: 1px solid white;
+}
+.heropaneltextonly .button:hover{
+    background:#257baa;
+    /*color:#373737 !important;*/
+    border: 1px solid white;
+}
+.herohighlight{
+    font-size:1.4rem;
+    color:#0FAAFF;
+    font-weight: 700;
 }
 .pic1{
     background-size: cover;
