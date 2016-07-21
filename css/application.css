@@ -374,7 +374,7 @@ and (max-width: 480px) {
     background-size: cover;
     height: 150px;
     margin-bottom: 25px;
-    background-position-y: -373px;
+    background-position-y: -260px;
 }
 .jobtitle{
     font-size:0.5REM;
